@@ -15,8 +15,6 @@ public class FsmTest {
 
     public static void main(String[] args) throws Exception {
 
-        Stopwatch stopwatch = Stopwatch.createStarted();
-
         // This path should be your local chrome driver folder
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Alper Silistre\\Downloads\\ChromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -41,47 +39,51 @@ public class FsmTest {
         // This path should be a local text file
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\PositiveTestSuite.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\NegativeTestSuite.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\0 Original FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\1 add with empty boxes FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\2 update with empty boxs FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\3 add with empty number of packages box FSM .txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\4 add with empty price box FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\5 add with empty title box FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\6 update with empty title box FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\7 update with empty price box FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\8 update with empty number box FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\9 Add click does not respond FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\10 Edit click does not respond FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\11 Both Add and Edit click does not respond FSM generated test cases.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\12 After edit save button move to initial state without saving FSM generated test cases.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\12.txt"));
 
-        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\0 Original FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\1 add with empty boxes FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\2 update with empty boxs FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\3 add with empty number of packages box FSM - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\4 add with empty price box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\5 add with empty title box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\6 update with empty title box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\7 update with empty price box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\8 update with empty number box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\9 Add click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\10 Edit click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\11 Both Add and Edit click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 90 coverage\\12 After edit save button move to initial state without saving FSM generated test cases - RANDOM.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\12.txt"));
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\0 Original FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\1 add with empty boxes FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\2 update with empty boxs FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\3 add with empty number of packages box FSM - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\4 add with empty price box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\5 add with empty title box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\6 update with empty title box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\7 update with empty price box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\8 update with empty number box FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\9 Add click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\10 Edit click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\11 Both Add and Edit click does not respond FSM generated test cases - RANDOM.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\Random Final Test Cases - 60 coverage\\12 After edit save button move to initial state without saving FSM generated test cases - RANDOM.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\12.txt"));
+
+
+
+        Stopwatch stopwatch = Stopwatch.createStarted();
 
         int counter = 1;
         boolean isAdditionalRowsDeleted = false;
@@ -370,9 +372,9 @@ public class FsmTest {
         try {
             input = driver.findElement(By.xpath(id));
             input.click();
-            driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+            driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
             driver.switchTo().alert().accept();
-            driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+            driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
         } catch (NoSuchElementException ignored) {
         }
     }
