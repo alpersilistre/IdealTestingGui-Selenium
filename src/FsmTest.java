@@ -15,15 +15,21 @@ public class FsmTest {
 
     public static void main(String[] args) throws Exception {
 
-        // This path should be your local chrome driver folder
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Alper Silistre\\Downloads\\ChromeDriver\\chromedriver.exe");
+        // This path should be your local chrome driver folder, for example;
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\[YOUR_USERNAME]\\Desktop\\ChromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         WebElement element = null;
 
-        String baseUrl = "http://localhost/iselta/";
+        // This url is set according to Mutant type of the test
+        // For Negative testing, use the base url and change local test case file below accroding to mutant number
+        String baseUrl = "http://iselta.ivknet.de/";
+
+        // For Positive testing, use the '0-Original.txt' local test case file below and change the url according to mutant number, for example;
+        // For Mutant 1 => String baseUrl = "http://iselta.ivknet.de/1";
+        // For Mutant 2 => String baseUrl = "http://iselta.ivknet.de/2";
 
         driver.get(baseUrl);
-        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         element = driver.findElement(By.id("lang_en"));
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
@@ -36,52 +42,48 @@ public class FsmTest {
         element.click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
-        // This path should be a local text file
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\PositiveTestSuite.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\NegativeTestSuite.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\12.txt"));
+        // This path should be a local text file, for example;        
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\12.txt"));
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\12.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random100\\FinalTestCases\\12.txt"));
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\12.txt"));
-
-
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\0-Original.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\Random60\\FinalTestCases\\12.txt"));
 
         Stopwatch stopwatch = Stopwatch.createStarted();
 
@@ -130,7 +132,6 @@ public class FsmTest {
                 System.out.println(" - Pass");
             }
 
-            //System.out.println("----");
             counter++;
         }
 
@@ -146,7 +147,6 @@ public class FsmTest {
     }
 
     private static boolean ApplyStage(char x, WebDriver driver, String baseUrl, int counter) {
-
         WebElement input;
         boolean isEditInputExist = false;
         boolean isSaveButtonExist = false;
