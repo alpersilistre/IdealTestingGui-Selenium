@@ -43,7 +43,7 @@ public class FsmTest {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         // This path should be a local text file, for example;        
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\1.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\2.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\[YOUR_USERNAME]\\Desktop\\ProposedApproach\\FinalTestCases\\3.txt"));
@@ -164,6 +164,9 @@ public class FsmTest {
                     input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input"));
                     input.click();
                     driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+                }
+                else {
+                    return false;
                 }
                 isSaveButtonExist = existsElement(driver, "input[name*='btn_saveSpecial']");
                 if(!isSaveButtonExist) {
@@ -341,11 +344,11 @@ public class FsmTest {
     private static void setDatePickers (WebDriver driver) {
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[4]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[2]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[5]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[3]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
