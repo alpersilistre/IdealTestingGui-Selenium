@@ -50,7 +50,7 @@ public class FsmTest {
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\8.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\9.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\11.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\11.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\12.txt"));
 
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\0-Original.txt"));
@@ -164,6 +164,9 @@ public class FsmTest {
                     input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input"));
                     input.click();
                     driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+                }
+                else {
+                    return false;
                 }
                 isSaveButtonExist = existsElement(driver, "input[name*='btn_saveSpecial']");
                 if(!isSaveButtonExist) {
@@ -341,11 +344,11 @@ public class FsmTest {
     private static void setDatePickers (WebDriver driver) {
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[4]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[2]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[5]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[3]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
