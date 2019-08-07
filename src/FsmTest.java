@@ -11,14 +11,30 @@ import java.util.concurrent.TimeUnit;
 
 public class FsmTest {
 
-    private static int addCounter = 0;
+    private static String loginCredential = "heide";
+    private static int counter = 1;
+    private static String errorColor = "rgba(153, 0, 0, 1)";
+
+    private static void OpenSpecialModule(WebDriver driver) {
+        WebElement input = driver.findElement(By.cssSelector("a[href*='?content=main']"));
+        input.click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        input = driver.findElement(By.cssSelector("a[href*='?content=product']"));
+        input.click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div/table[1]/tbody/tr/td[4]/input[2]"));
+        input.click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        input = driver.findElement(By.cssSelector("input[name*='btn_gotoStep_5']"));
+        input.click();
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+    }
 
     public static void main(String[] args) throws Exception {
-
         // This path should be your local chrome driver folder
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Alper Silistre\\Downloads\\ChromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        WebElement element = null;
+        WebElement element;
 
         String baseUrl = "http://localhost/iselta/";
 
@@ -26,67 +42,35 @@ public class FsmTest {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         element = driver.findElement(By.id("lang_en"));
+        element.click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         element = driver.findElement(By.xpath("//*[@id=\"page_container\"]/div[4]/form/input[2]"));
-        element.sendKeys("heide");
+        element.sendKeys(loginCredential);
         element = driver.findElement(By.id("qlogin_pwd"));
-        element.sendKeys("heide");
+        element.sendKeys(loginCredential);
         element = driver.findElement(By.xpath("//*[@id=\"page_container\"]/div[4]/form/input[4]"));
         element.click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         // This path should be a local text file
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\PositiveTestSuite.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\5 Final Test cases\\NegativeTestSuite.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\10.txt"));
-        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\ProposedApproach\\FinalTestCases\\12.txt"));
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random100\\FinalTestCases\\12.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\\4-TestGeneratorResults\\CompactTestCases-0.txt"));
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\0-Original.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\1.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\2.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\3.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\4.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\5.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\6.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\7.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\8.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\9.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\10.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\11.txt"));
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\13-12-2018-SoftwareTesting\\Random60\\FinalTestCases\\12.txt"));
-
-
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-July2019\4-TestGeneratorResults\CompactTestCases-12.txt"));
 
         Stopwatch stopwatch = Stopwatch.createStarted();
-
-        int counter = 1;
-        boolean isAdditionalRowsDeleted = false;
 
         String line;
         while((line = in.readLine()) != null)
@@ -96,30 +80,15 @@ public class FsmTest {
 
             boolean testResult = false;
 
-            WebElement input = null;
+            OpenSpecialModule(driver);
 
-            input = driver.findElement(By.cssSelector("a[href*='?content=main']"));
-            input.click();
-            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-            input = driver.findElement(By.cssSelector("a[href*='?content=product']"));
-            input.click();
-            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-            input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div/table[1]/tbody/tr/td[4]/input[2]"));
-            input.click();
-            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-            input = driver.findElement(By.cssSelector("input[name*='btn_gotoStep_5']"));
-            input.click();
-            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-
-            if(!isAdditionalRowsDeleted) {
-                for(int i = 0; i < 9; i++) {
-                    deleteIfExist(driver, "//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[3]/td[8]/input");
+            for (int i = 0; i < chars.length; i++) {
+                if (i + 1 < chars.length) {
+                    testResult = ApplyStage(chars[i], driver, chars[i + 1]);
                 }
-                isAdditionalRowsDeleted = true;
-            }
-
-            for (char aChar : chars) {
-                testResult = ApplyStage(aChar, driver, baseUrl, counter);
+                else {
+                    testResult = ApplyStage(chars[i], driver, chars[i]);
+                }
                 if (!testResult) {
                     System.out.println(" - Fail");
                     break;
@@ -130,7 +99,6 @@ public class FsmTest {
                 System.out.println(" - Pass");
             }
 
-            //System.out.println("----");
             counter++;
         }
 
@@ -145,41 +113,35 @@ public class FsmTest {
         System.out.println("that took: " + millis);
     }
 
-    private static boolean ApplyStage(char x, WebDriver driver, String baseUrl, int counter) {
+    private static boolean ApplyStage(char x, WebDriver driver, char secondChar) {
 
         WebElement input;
-        boolean isEditInputExist = false;
-        boolean isSaveButtonExist = false;
-        boolean isCancelButtonExist = false;
-        boolean isAddButtonExist = false;
-        boolean isTitleErrorExist = false;
-        boolean isPriceErrorExist = false;
-        boolean isNumberErrorExist = false;
-        boolean isItemAdded = false;
+        boolean isEditInputExist;
+        boolean isSaveButtonExist;
+        boolean isCancelButtonExist;
+        boolean isAddButtonExist;
+        boolean isItemSaved;
 
         switch (x) {
-            case 'k':
+            case 'k': // Click a Edit button
                 isEditInputExist = isElementExistByXpath(driver, "//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input");
-                if(isEditInputExist) {
-                    input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input"));
-                    input.click();
-                    driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-                }
-                else {
-                    return false;
-                }
+                if(!isEditInputExist) { return false; }
+
+                input = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input"));
+                input.click();
+                driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
                 isSaveButtonExist = existsElement(driver, "input[name*='btn_saveSpecial']");
-                if(!isSaveButtonExist) {
-                    return false;
-                }
+                if(!isSaveButtonExist) { return false; }
                 break;
-            case 'u':
+            case 'u': // Set text to the Title box
                 input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']"));
                 input.clear();
+                counter += 1;
                 input.sendKeys("Test" + counter);
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
                 break;
-            case 'x':
+            case 'x': // Set text to the Number box
                 boolean isEnabled = isEnabled(driver, "input[name*='frm_arr_product[Specials][NumberOfPackages]']");
                 if(isEnabled) {
                     input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][NumberOfPackages]']"));
@@ -189,62 +151,46 @@ public class FsmTest {
                 }
 
                 input.clear();
+                counter += 1;
                 input.sendKeys(Integer.toString(counter));
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
                 break;
-            case 'y':
+            case 'y': // Set text to the Price box
                 input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Price]']"));
                 input.clear();
+                counter += 1;
                 input.sendKeys(Integer.toString(counter));
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
                 break;
-            case 'z':
+            case 'z': // Set text to the Description box
                 input = driver.findElement(By.cssSelector("textarea[name*='frm_arr_product[Specials][DescriptionNational]']"));
                 input.clear();
+                counter += 1;
                 input.sendKeys("Test" + counter);
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
                 break;
-            case 'l':
+            case 'l': // Click to the Save button in an edit state
                 isSaveButtonExist = existsElement(driver, "input[name*='btn_saveSpecial']");
                 isCancelButtonExist = existsElement(driver, "input[name*='btn_cancelSpecial']");
-                if(!isSaveButtonExist || !isCancelButtonExist) {
-                    return false;
-                }
-                input = driver.findElement(By.cssSelector("input[name*='btn_saveSpecial']"));
-                input.click();
+                if(!isSaveButtonExist || !isCancelButtonExist) { return false; }
+
+                String aktuellToBeSaved = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][AvailableContingent]']")).getAttribute("value");
+                String priceToBeSaved = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Price]']")).getAttribute("value");
+                String titleToBeSaved = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']")).getAttribute("value");
+
+                driver.findElement(By.cssSelector("input[name*='btn_saveSpecial']")).click();
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
-                input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']"));
-                String a = input.getCssValue("background-color");
-                String b = "rgba(153, 0, 0, 1)";
-                if(a.equals(b)) {
-                    isTitleErrorExist = true;
+                isItemSaved = IsItemSavedFromEdit(driver, aktuellToBeSaved, priceToBeSaved, titleToBeSaved);
+
+                if(secondChar == 'e' && !isItemSaved) {
+                    return true;
                 }
 
-                input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Price]']"));
-                a = input.getCssValue("background-color");
-                b = "rgba(153, 0, 0, 1)";
-                if(a.equals(b)) {
-                    isPriceErrorExist = true;
-                }
-
-                isAddButtonExist = existsElement(driver, "input[name*='frm_arr_product[Specials][AvailableContingent]");
-                if(isAddButtonExist) {
-                    input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][AvailableContingent]']"));
-                }
-                else {
-                    input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][NumberOfPackages]']"));
-                }
-
-                a = input.getCssValue("background-color");
-                b = "rgba(153, 0, 0, 1)";
-                if(a.equals(b)) {
-                    isNumberErrorExist = true;
-                }
-
-                if(isTitleErrorExist || isPriceErrorExist || isNumberErrorExist) {
+                if(!isItemSaved) {
                     return false;
                 }
+
                 break;
             case 'r':
                 input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']"));
@@ -283,56 +229,40 @@ public class FsmTest {
                 break;
             case 'v':
                 isAddButtonExist = existsElement(driver, "input[name*='btn_addSpecial']");
-                if(!isAddButtonExist) {
+                if(!isAddButtonExist) { return false; }
+
+                setDatePickers(driver);
+
+                // if 2 out of 3 input is filled, check if the empty field background is red => 'Success' if not => 'Fail'
+
+                String numberToBeAdd = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][NumberOfPackages]']")).getAttribute("value");
+                String priceToBeAdd = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Price]']")).getAttribute("value");
+                String titleToBeAdd = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']")).getAttribute("value");
+
+                driver.findElement(By.cssSelector("input[name*='btn_addSpecial']")).click();
+                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+                isItemSaved = IsItemSavedFromAdd(driver, numberToBeAdd, priceToBeAdd, titleToBeAdd);
+
+                if(secondChar == 'e' && !isItemSaved) {
+                    return true;
+                }
+
+                if(!isItemSaved) {
                     return false;
                 }
+                else {
+                    DeleteLatestItem(driver);
+                }
+                /*addCounter++;
 
                 if(addCounter > 7) {
                     for(int i = 0; i < 8; i++) {
                         deleteIfExist(driver, "//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[3]/td[8]/input");
                     }
                     addCounter = 0;
-                }
+                }*/
 
-                setDatePickers(driver);
-
-                String titleToBeAdd = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']")).getAttribute("value");
-
-                driver.findElement(By.cssSelector("input[name*='btn_addSpecial']")).click();
-                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-                input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Title]']"));
-                isTitleErrorExist = false;
-                String c = input.getCssValue("background-color");
-                String d = "rgba(153, 0, 0, 1)";
-                if(c.equals(d)) {
-                    isTitleErrorExist = true;
-                }
-
-                input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][Price]']"));
-                isPriceErrorExist = false;
-                c = input.getCssValue("background-color");
-                d = "rgba(153, 0, 0, 1)";
-                if(c.equals(d)) {
-                    isPriceErrorExist = true;
-                }
-
-                input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][NumberOfPackages]']"));
-                isNumberErrorExist = false;
-                c = input.getCssValue("background-color");
-                d = "rgba(153, 0, 0, 1)";
-                if(c.equals(d)) {
-                    isNumberErrorExist = true;
-                }
-
-                if(driver.getPageSource().contains(titleToBeAdd)) {
-                    isItemAdded = true;
-                }
-
-                if(isTitleErrorExist || isPriceErrorExist || isNumberErrorExist || !isItemAdded) {
-                    return false;
-                }
-                addCounter++;
                 break;
             default:
                 break;
@@ -341,14 +271,82 @@ public class FsmTest {
         return true;
     }
 
+    private static boolean IsItemSavedFromEdit(WebDriver driver, String aktuell, String price, String title) {
+        if(DoesInputGivesAnError("Title", driver)
+                || DoesNumberInputGivesAnError(driver)
+                || DoesInputGivesAnError("Price", driver)) {
+            return false;
+        }
+
+        String savedAktuell = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[5]")).getText();
+        String savedPriceWithEuro = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[6]")).getText();
+        String savedTitle = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[2]/td[2]")).getText();
+
+        String[] temp = savedPriceWithEuro.split(" ");
+        String savedPrice = temp[0];
+
+        return aktuell.equals(savedAktuell) && price.equals(savedPrice) && title.equals(savedTitle);
+    }
+
+    private static boolean IsItemSavedFromAdd(WebDriver driver, String number, String price, String title) {
+        if(DoesInputGivesAnError("Title", driver)
+                || DoesNumberInputGivesAnError(driver)
+                || DoesInputGivesAnError("Price", driver)) {
+            return false;
+        }
+
+        String savedNumber = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[3]/td[4]")).getText();
+        String savedPrice = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[3]/td[6]")).getText();
+        String savedTitle = driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[1]/tbody/tr[3]/td[2]")).getText();
+
+        return number.equals(savedNumber) && price.equals(savedPrice) && title.equals(savedTitle);
+    }
+
+    private static void DeleteLatestItem(WebDriver driver) {
+        WebElement input;
+        try{
+            input = driver.findElement(By.xpath("/html/body/div/div[2]/form/div[2]/div/div[2]/table[1]/tbody/tr[3]/td[8]/input"));
+            input.click();
+            driver.manage().timeouts().implicitlyWait(250, TimeUnit.MILLISECONDS);
+            driver.switchTo().alert().accept();
+            driver.manage().timeouts().implicitlyWait(250, TimeUnit.MILLISECONDS);
+        }
+        catch (NoSuchElementException ignored) {
+        }
+    }
+
+    private static boolean DoesInputGivesAnError(String name, WebDriver driver) {
+        WebElement input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][" + name + "]']"));
+        String backgroundColor = input.getCssValue("background-color");
+
+        return backgroundColor.equals(errorColor);
+    }
+
+    private static boolean DoesNumberInputGivesAnError(WebDriver driver) {
+        WebElement input;
+        String backgroundColor;
+
+        if (existsElement(driver, "input[name*='btn_cancelSpecial']")) {
+            input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][AvailableContingent]']"));
+            backgroundColor = input.getCssValue("background-color");
+        }
+        else {
+            input = driver.findElement(By.cssSelector("input[name*='frm_arr_product[Specials][NumberOfPackages]']"));
+            backgroundColor = input.getCssValue("background-color");
+        }
+
+        return backgroundColor.equals(errorColor);
+
+    }
+
     private static void setDatePickers (WebDriver driver) {
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[6]/td[1]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"leftBox\"]/div/div[2]/table[2]/tbody/tr[2]/td[2]/img[2]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[7]/td[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"datepicker\"]/table/tbody/tr[6]/td[3]")).click();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
@@ -370,23 +368,10 @@ public class FsmTest {
         return true;
     }
 
-    private static void deleteIfExist(WebDriver driver, String id) {
-        WebElement input = null;
-        try {
-            input = driver.findElement(By.xpath(id));
-            input.click();
-            driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
-            driver.switchTo().alert().accept();
-            driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
-        } catch (NoSuchElementException ignored) {
-        }
-    }
-
     private static boolean isEnabled(WebDriver driver, String id) {
         boolean isEnabled;
         WebElement element = driver.findElement(By.cssSelector(id));
         isEnabled = element.isEnabled();
         return isEnabled;
     }
-
 }

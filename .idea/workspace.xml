@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f22022c-d264-45bb-93d0-5332e351e0b6" name="Default Changelist" comment="">
+    <list default="true" id="5f22022c-d264-45bb-93d0-5332e351e0b6" name="Default Changelist" comment="Update test file according to latest FSM files.&#10;                                                              Move repetitive parts to its own method to improve modularity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FsmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FsmTest.java" afterDir="false" />
     </list>
@@ -17,15 +17,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+            <state relative-caret-position="292">
+              <caret line="287" column="8" selection-start-line="287" selection-start-column="8" selection-end-line="287" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#OpenSpecialModule#0;class#FsmTest#0" />
                 <element signature="method#setDatePickers#0;class#FsmTest#0" />
-                <element signature="method#existsElement#0;class#FsmTest#0" />
-                <element signature="method#isElementExistByXpath#0;class#FsmTest#0" />
-                <element signature="method#deleteIfExist#0;class#FsmTest#0" />
-                <element signature="method#isEnabled#0;class#FsmTest#0" />
               </folding>
             </state>
           </provider>
@@ -44,10 +41,38 @@
     <findStrings>
       <find>/div/div/table[1]/tbody/tr/td[4]/input[2]</find>
       <find>input[name*='frm_arr_product[Specials][AvailableConting</find>
+      <find>getAttribute(&quot;value&quot;);</find>
+      <find>getAttribute(&quot;value&quot;)</find>
+      <find>.contains</find>
+      <find>13-12-2018</find>
+      <find>div[1]/div[2]/form/div[2]/div/div[2]/table[1]/tbody/tr[2]/td[2]</find>
+      <find>titleToBeAdd</find>
+      <find>'z'</find>
+      <find>18-02-2019-SoftwareTesting\\Results\\ProposedApproach\\FinalTestCases\\</find>
+      <find>input</find>
+      <find>baseUrl</find>
+      <find>isEditInputExist</find>
+      <find>isCancelButtonExist</find>
+      <find>isTitleErrorExist</find>
+      <find>isSaveButtonExist</find>
+      <find>isItemSaved</find>
+      <find>isTitleErrorExist</find>
+      <find>addCounter</find>
+      <find>isItemAdded</find>
+      <find>name*='frm_arr_product[Specials][AvailableContingent</find>
+      <find>existsElement</find>
+      <find>input[name*='btn_saveSpecial']</find>
+      <find>counter</find>
+      <find>errorColor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,8 +81,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="941" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -67,8 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,11 +115,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544959367625" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565216008839" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,6 +145,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FsmTest" />
+        <item itemvalue="Application.FsmTest" />
       </list>
     </recent_temporary>
   </component>
@@ -139,16 +166,28 @@
       <workItem from="1544999086023" duration="3961000" />
       <workItem from="1545344122642" duration="4606000" />
       <workItem from="1545379540492" duration="4401000" />
+      <workItem from="1551022046099" duration="19513000" />
+      <workItem from="1553800077347" duration="321000" />
+      <workItem from="1553800938602" duration="36000" />
+      <workItem from="1555165953895" duration="7000" />
+      <workItem from="1562696498312" duration="16000" />
+      <workItem from="1562696833022" duration="3114000" />
+      <workItem from="1563200712741" duration="1818000" />
+      <workItem from="1563301723033" duration="1863000" />
+      <workItem from="1564516120972" duration="26000" />
+      <workItem from="1564920587512" duration="3485000" />
+      <workItem from="1565206032521" duration="9931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23452000" />
+    <option name="totallyTimeSpent" value="75419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="941" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22428884" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10021322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -156,18 +195,18 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33479214" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2286652" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33369803" />
+      <window_info anchor="bottom" id="Debug" order="3" type="SLIDING" weight="0.26218852" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3261105" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -182,30 +221,82 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity." />
+    <MESSAGE value="Update test file according to latest FSM files.&#10;                                                              Move repetitive parts to its own method to improve modularity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update test file according to latest FSM files.&#10;                                                              Move repetitive parts to its own method to improve modularity." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
-          <line>276</line>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+        <state relative-caret-position="292">
+          <caret line="287" column="8" selection-start-line="287" selection-start-column="8" selection-end-line="287" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#OpenSpecialModule#0;class#FsmTest#0" />
             <element signature="method#setDatePickers#0;class#FsmTest#0" />
-            <element signature="method#existsElement#0;class#FsmTest#0" />
-            <element signature="method#isElementExistByXpath#0;class#FsmTest#0" />
-            <element signature="method#deleteIfExist#0;class#FsmTest#0" />
-            <element signature="method#isEnabled#0;class#FsmTest#0" />
           </folding>
         </state>
       </provider>
