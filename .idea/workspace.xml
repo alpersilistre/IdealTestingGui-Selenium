@@ -17,12 +17,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1077">
-              <caret line="301" column="9" lean-forward="true" selection-start-line="301" selection-start-column="9" selection-end-line="301" selection-end-column="9" />
+            <state relative-caret-position="550">
+              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#OpenSpecialModule#0;class#FsmTest#0" />
+                <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
+                <element signature="method#IsItemSavedFromAdditionalEdit#0;class#FsmTest#0" />
+                <element signature="method#DoesNumberInputGivesAnError#0;class#FsmTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/org/openqa/selenium/support/ui/Select.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -38,35 +49,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/div/div/table[1]/tbody/tr/td[4]/input[2]</find>
-      <find>input[name*='frm_arr_product[Specials][AvailableConting</find>
-      <find>getAttribute(&quot;value&quot;);</find>
-      <find>getAttribute(&quot;value&quot;)</find>
-      <find>.contains</find>
-      <find>13-12-2018</find>
-      <find>div[1]/div[2]/form/div[2]/div/div[2]/table[1]/tbody/tr[2]/td[2]</find>
-      <find>titleToBeAdd</find>
-      <find>'z'</find>
-      <find>18-02-2019-SoftwareTesting\\Results\\ProposedApproach\\FinalTestCases\\</find>
-      <find>input</find>
-      <find>baseUrl</find>
-      <find>isEditInputExist</find>
-      <find>isCancelButtonExist</find>
-      <find>isTitleErrorExist</find>
-      <find>isSaveButtonExist</find>
-      <find>isItemSaved</find>
-      <find>addCounter</find>
-      <find>isItemAdded</find>
-      <find>name*='frm_arr_product[Specials][AvailableContingent</find>
-      <find>existsElement</find>
-      <find>input[name*='btn_saveSpecial']</find>
-      <find>counter</find>
-      <find>errorColor</find>
       <find>div/div[2]/table[2]/tbody/tr[2</find>
       <find>DeleteLatestItem</find>
       <find>secondChar</find>
       <find>timeouts</find>
       <find>/div/div[2]/table[1]/tbody/tr[3]/td[4]</find>
+      <find>OpenSpecialModule</find>
+      <find>/*[@id=\&quot;leftBox\&quot;]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input</find>
+      <find>'f'</find>
+      <find>'h'</find>
+      <find>IsItemSavedFromEdit</find>
+      <find>IsItemSavedFromSpecialEdit</find>
+      <find>'d'</find>
+      <find>'c'</find>
+      <find>'b'</find>
+      <find>'m'</find>
+      <find>'t'</find>
+      <find>'r'</find>
+      <find>'w'</find>
+      <find>DoesSpecialInputGivesAnError</find>
+      <find>DoesNumberInputGivesAnError</find>
+      <find>div/div[2]/table[1]/tbody/tr[2]/td[5]</find>
+      <find>/div[2]/table[1]/tbody/tr[2]/td[6]</find>
+      <find>'x'</find>
+      <find>Number</find>
+      <find>*[@id=\&quot;leftBox\&quot;]/div/div[2]/table[1]/tbody/tr[2]/td[7]/input</find>
+      <find>By.xpath</find>
+      <find>left</find>
+      <find>'q'</find>
+      <find>NoSuchElementException</find>
+      <find>'y'</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,7 +97,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -95,6 +107,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,14 +125,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565216582425" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579837286946" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -186,7 +198,23 @@
       <workItem from="1569152997904" duration="622000" />
       <workItem from="1569166316049" duration="7494000" />
       <workItem from="1569227991385" duration="1445000" />
-      <workItem from="1569229480096" duration="7565000" />
+      <workItem from="1569229480096" duration="7819000" />
+      <workItem from="1577958403966" duration="14033000" />
+      <workItem from="1579455668782" duration="325000" />
+      <workItem from="1579549180838" duration="619000" />
+      <workItem from="1579714230071" duration="624000" />
+      <workItem from="1579715959546" duration="71000" />
+      <workItem from="1579716167596" duration="10000" />
+      <workItem from="1579724587489" duration="5097000" />
+      <workItem from="1579801021631" duration="5082000" />
+      <workItem from="1579810090219" duration="9092000" />
+      <workItem from="1580143237079" duration="4491000" />
+      <workItem from="1580150821385" duration="57000" />
+      <workItem from="1580151263498" duration="13000" />
+      <workItem from="1580152085901" duration="1441000" />
+      <workItem from="1580154241426" duration="2599000" />
+      <workItem from="1580157910288" duration="70000" />
+      <workItem from="1580158095151" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity.">
       <created>1565216025971</created>
@@ -199,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93134000" />
+    <option name="totallyTimeSpent" value="137052000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -213,7 +241,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1076759" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09594883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -222,15 +250,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3336945" />
-      <window_info anchor="bottom" id="Debug" order="3" type="SLIDING" weight="0.26218852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28169015" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2654388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.17659806" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29469123" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,25 +296,46 @@
     <MESSAGE value="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity." />
     <option name="LAST_COMMIT_MESSAGE" value="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity." />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
+          <line>345</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/org/openqa/selenium/WebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="320">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1077">
-          <caret line="301" column="9" lean-forward="true" selection-start-line="301" selection-start-column="9" selection-end-line="301" selection-end-column="9" />
+        <state relative-caret-position="550">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#OpenSpecialModule#0;class#FsmTest#0" />
+            <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
+            <element signature="method#IsItemSavedFromAdditionalEdit#0;class#FsmTest#0" />
+            <element signature="method#DoesNumberInputGivesAnError#0;class#FsmTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/org/openqa/selenium/support/ui/Select.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
         </state>
       </provider>
     </entry>
