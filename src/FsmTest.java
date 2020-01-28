@@ -54,7 +54,7 @@ public class FsmTest {
 
         // This path should be a local text file
 
-        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults\\CompactTestCases-0.txt"));
+        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults\\CompactTestCases-0.txt"));
 
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults\\CompactTestCases-1.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults\\CompactTestCases-2.txt"));
@@ -83,7 +83,7 @@ public class FsmTest {
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-9.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-10.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-11.txt"));
-        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-12.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-12.txt"));
 
         Stopwatch stopwatch = Stopwatch.createStarted();
 

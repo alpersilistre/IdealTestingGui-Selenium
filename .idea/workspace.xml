@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f22022c-d264-45bb-93d0-5332e351e0b6" name="Default Changelist" comment="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FsmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FsmTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="56" column="194" lean-forward="true" selection-start-line="56" selection-start-column="194" selection-end-line="56" selection-end-column="194" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
@@ -107,8 +106,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,6 +214,7 @@
       <workItem from="1580154241426" duration="2599000" />
       <workItem from="1580157910288" duration="70000" />
       <workItem from="1580158095151" duration="40000" />
+      <workItem from="1580227818633" duration="5158000" />
     </task>
     <task id="LOCAL-00001" summary="Update test file according to latest FSM files.&#10;Move repetitive parts to its own method to improve modularity.">
       <created>1565216025971</created>
@@ -227,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137052000" />
+    <option name="totallyTimeSpent" value="142210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,8 +240,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09594883" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09701493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,7 +251,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28169015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28169015" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2654388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="56" column="194" lean-forward="true" selection-start-line="56" selection-start-column="194" selection-end-line="56" selection-end-column="194" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
