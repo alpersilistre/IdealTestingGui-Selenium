@@ -85,6 +85,68 @@ public class FsmTest {
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-11.txt"));
         //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults\\CompactTestCases-12.txt"));
 
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-0.txt"));
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random60\\CompactTestCases-12.txt"));
+
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-0.txt"));
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\SpecialsModule\\4-TestGeneratorResults-Random100\\CompactTestCases-12.txt"));
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-0.txt"));
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random60\\CompactTestCases-12.txt"));
+
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-0.txt"));
+
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-1.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-2.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-3.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-4.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-5.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-6.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-7.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-8.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-9.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-10.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-11.txt"));
+        //BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Alper Silistre\\Desktop\\SoftwareTesting-January2020\\AdditionalServicesModule\\4-TestGeneratorResults-Random100\\CompactTestCases-12.txt"));
+
         Stopwatch stopwatch = Stopwatch.createStarted();
 
         String line;

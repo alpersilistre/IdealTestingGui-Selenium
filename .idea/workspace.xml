@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f22022c-d264-45bb-93d0-5332e351e0b6" name="Default Changelist" comment="">
+    <list default="true" id="5f22022c-d264-45bb-93d0-5332e351e0b6" name="Default Changelist" comment="Check if the system is in the Edit State before proceeding.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FsmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FsmTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="632" lean-forward="true" selection-start-line="632" selection-end-line="632" />
+            <state relative-caret-position="229">
+              <caret line="56" column="194" lean-forward="true" selection-start-line="56" selection-start-column="194" selection-end-line="56" selection-end-column="194" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
@@ -94,7 +95,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580243402813" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580243629236" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.8.1/client-combined-3.8.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -145,6 +146,10 @@
       <workItem from="1545344122642" duration="4606000" />
       <workItem from="1545379540492" duration="4401000" />
       <workItem from="1549810177682" duration="4524000" />
+      <workItem from="1582141185853" duration="7409000" />
+      <workItem from="1582226284758" duration="5735000" />
+      <workItem from="1583172505281" duration="9000" />
+      <workItem from="1588534117616" duration="1251000" />
     </task>
     <task id="LOCAL-00001" summary="Check if the system is in the Edit State before proceeding.">
       <created>1549820346065</created>
@@ -157,13 +162,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27990000" />
+    <option name="totallyTimeSpent" value="43220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09701493" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10127932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -172,13 +177,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33479214" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22860238" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.12892741" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -241,18 +246,6 @@
     <MESSAGE value="Check if the system is in the Edit State before proceeding." />
     <option name="LAST_COMMIT_MESSAGE" value="Check if the system is in the Edit State before proceeding." />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FsmTest.java</url>
-          <line>568</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -266,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FsmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="632" lean-forward="true" selection-start-line="632" selection-end-line="632" />
+        <state relative-caret-position="229">
+          <caret line="56" column="194" lean-forward="true" selection-start-line="56" selection-start-column="194" selection-end-line="56" selection-end-column="194" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#IsItemSavedFromSpecialEdit#0;class#FsmTest#0" />
